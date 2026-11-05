@@ -31,8 +31,8 @@ The project will use fictional member records and sample class schedules created
 
 ## Team Members
 
-- Saulo Patel
-- Zhen Yang
+- Saulo Patel - spatel35@stevens.edu - saulopatel16
+- Zhen Yang - zyang98@stevens.edu - YatogamiTohka-B
 - Kenneth Seinshin
 
 ## Project Status
