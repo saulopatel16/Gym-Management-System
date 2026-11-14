@@ -1,7 +1,5 @@
-
 import pandas as pd
 import attendance
-
 
 def get_attendance_summary():
     # Default summary when no data exists
@@ -14,17 +12,13 @@ def get_attendance_summary():
     }
 
     # Check if attendance records exist
-    if not attendance.DATA_FILE.exists():
+    records = attendance.read_attendance_records()
+
+    if not records:
         return summary
 
-    # Load CSV data using Pandas
-    df = pd.read_csv(
-        attendance.DATA_FILE,
-        dtype={"member_id": str}
-    )
+    df = pd.DataFrame(records)
 
-    if df.empty:
-        return summary
 
     # Convert timestamps to datetime objects
     df["timestamp"] = pd.to_datetime(df["timestamp"])
