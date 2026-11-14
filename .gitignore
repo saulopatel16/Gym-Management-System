@@ -221,3 +221,6 @@ __marimo__/
 
 # Local attendance records
 data/attendance.csv
+
+# Generated attendance charts
+charts/
